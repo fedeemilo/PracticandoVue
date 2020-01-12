@@ -20,6 +20,18 @@
 		<!-- *No es buena idea añadir éste atributo al nodo central en que estamos
 		desplegando nuestra app* -->
 		<div v-html="mensajes.texto3"></div>
+		<hr />
+
+		<!-- Bucles y condicionales con Vue.js -->
+		<h1>Bucles y condicionales</h1>
+		<!-- Despliegue básico de un arreglo -->
+		<div>
+			<!-- *Forma básica, pero no la deseada* -->
+			{{ colores[0] }}
+			{{ colores[1] }}
+			{{ colores[2] }}
+			{{ colores[3] }}
+		</div>
 	</div>
 </template>
 
@@ -38,7 +50,8 @@ export default {
 				texto1: 'Vue',
 				texto2: '.js',
 				texto3: '<h1>Lorem ipsum </h1> <i>dolor sit amet</i>'
-			}
+			},
+			colores: ['azul', 'verde', 'amarillo', 'rojo']
 		};
 	}
 };
