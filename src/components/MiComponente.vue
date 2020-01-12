@@ -11,9 +11,13 @@ export default {
 	// Defino las propiedades del componente
 	name: 'MiComponente',
 	data() {
-		return {};
+		return {
+			
+		};
 	}
 };
 </script>
 
-<style></style>
+<style scoped>
+
+</style>
