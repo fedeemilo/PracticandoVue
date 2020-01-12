@@ -15,7 +15,11 @@
 		<hr />
 
 		<!-- Mostrar texto en formato html -->
-		
+		<!-- La etiqueta es div vacía es poblada por los valores de mensajes.texto3
+		gracias al atributo de vue llamado v-html -->
+		<!-- *No es buena idea añadir éste atributo al nodo central en que estamos
+		desplegando nuestra app* -->
+		<div v-html="mensajes.texto3"></div>
 	</div>
 </template>
 
