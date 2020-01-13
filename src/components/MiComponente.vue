@@ -32,6 +32,12 @@
 			{{ colores[2] }}
 			{{ colores[3] }}
 		</div>
+		<!-- Desplegar listas en Vue -->
+		<div>
+			<ul>
+				<li v-bind="color in colores">{{ color }}</li>
+			</ul>
+		</div>
 	</div>
 </template>
 
