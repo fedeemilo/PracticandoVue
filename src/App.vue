@@ -2,20 +2,7 @@
 	<div id="app">
 		<div class="container">
 			<div class="row">
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link active" href="#">Active</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-					</li>
-				</ul>
+				<Navegacion />
 			</div>
 			<div class="row">
 				<h1>Mi web</h1>
@@ -28,11 +15,12 @@
 </template>
 
 <script>
-
+	import Navegacion from './components/Navegacion.vue';
 
 export default {
 	name: 'app',
 	components: {
+		Navegacion
 	}
 };
 </script>
