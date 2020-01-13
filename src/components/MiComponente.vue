@@ -48,6 +48,25 @@
 				<p>--------------------------------------------</p>
 			</div>
 		</div>
+		<!-- Utilizando Bootstrap dentro de Vue -->
+		<h1>Bootstrap 4 en Vue</h1>
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Active</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+					>Disabled</a
+				>
+			</li>
+		</ul>
+		<div></div>
 	</div>
 </template>
 
@@ -78,7 +97,7 @@ export default {
 	}
 };
 </script>
- 
+
 <style scoped>
 li {
 	list-style: none;
