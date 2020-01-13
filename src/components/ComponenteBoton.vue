@@ -1,7 +1,6 @@
 <template>
 	<!-- Creando bucles de componentes -->
 	<div>
-		<h1>Creando bucles de componentes</h1>
 		<button>{{ nombre }}</button>
 	</div>
 </template>
