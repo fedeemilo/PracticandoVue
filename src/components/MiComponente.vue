@@ -32,11 +32,21 @@
 			{{ colores[2] }}
 			{{ colores[3] }}
 		</div>
-		<!-- Desplegar listas en Vue -->
+		<!-- Desplegar listas -->
 		<div>
+			<h2>Desplegar Listas</h2>
 			<ul>
-				<li v-bind="color in colores">{{ color }}</li>
+				<li v-bind:key="color" v-for="color in colores">{{ color }}</li>
 			</ul>
+		</div>
+		<!-- Desplegar listas de objetos -->
+		<div>
+			<h2>Desplegar listas de objetos</h2>
+			<div v-bind:key="colorObj" v-for="colorObj in coloresObjetos">
+				Español: {{ colorObj.nombre }} <br />
+				Inglés: {{ colorObj.nombreIngles }}
+				<p>--------------------------------------------</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -57,10 +67,21 @@ export default {
 				texto2: '.js',
 				texto3: '<h1>Lorem ipsum </h1> <i>dolor sit amet</i>'
 			},
-			colores: ['azul', 'verde', 'amarillo', 'rojo']
+			colores: ['azul', 'verde', 'amarillo', 'rojo'],
+			coloresObjetos: [
+				{ nombre: 'rojo', nombreIngles: 'red' },
+				{ nombre: 'azul', nombreIngles: 'blue' },
+				{ nombre: 'amarillo', nombreIngles: 'yellow' },
+				{ nombre: 'verde', nombreIngles: 'green' }
+			]
 		};
 	}
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+li {
+	list-style: none;
+	margin-left: -3rem;
+}
+</style>
