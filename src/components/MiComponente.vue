@@ -78,7 +78,7 @@ export default {
 	}
 };
 </script>
-
+ 
 <style scoped>
 li {
 	list-style: none;
